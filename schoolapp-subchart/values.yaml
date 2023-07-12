@@ -5,7 +5,7 @@ mongodb:
   auth:
     enabled: true
     rootUser: 'schoolapp'
-    rootPassword: 'mongoRootPass'
+    rootPassword: 'mongoRootPass1'
 
 schoolapp-api:
   vault:
