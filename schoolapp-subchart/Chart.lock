@@ -1,0 +1,12 @@
+dependencies:
+- name: schoolapp-frontend
+  repository: https://gitlab.com/api/v4/projects/34240616/packages/helm/stable
+  version: 0.5.8
+- name: schoolapp-api
+  repository: https://gitlab.com/api/v4/projects/34240616/packages/helm/stable
+  version: 0.5.8
+- name: mongodb
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.1.1
+digest: sha256:011d9f270e259d2fa11a8fe98444957281741c23b95c12f11c292c030539e7f3
+generated: "2022-05-10T20:08:39.4974464Z"
