@@ -75,7 +75,7 @@ password: <THE_PASSWORD_YOU_GOT_ABOVE>
 
 ## School App Example with ArgoCD and Hardcoded Secrets
 
-Now let's see how to use a GitOps approach with ArgoCD to run our school app with hardcoded secrets.
+Now let's see how to use a GitOps approach with ArgoCD to run our school app.
 
 ## Delete the Current School App
 
@@ -89,7 +89,7 @@ kubectl delete ns schoolapp
 kubectl apply -f argocdSchoolApp.yaml
 ```
 
-## Test the School App with Hardcoded Secrets
+## Test the School App with ArgoCD
 
 ```bash
 # Port forward the frontend

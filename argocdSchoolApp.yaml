@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: schoolapp-subchart
-    repoURL: 'https://gitlab.com/public-projects3/training/vault-201.git'
+    repoURL: 'https://github.com/samgabrail/env0-argocd.git'
     targetRevision: HEAD
   project: default
   syncPolicy:
