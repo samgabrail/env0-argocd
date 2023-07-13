@@ -104,11 +104,15 @@ Try creating and deleting a course and check the logs of the api pod.
 kubectl logs -n schoolapp -f $(kubectl get pods --template '{{range .items}}{{.metadata.name}}{{end}}' --selector=app=api) -c api
 ```
 
-Notice this output:
+## Making a Change in Git
 
-**Expected Output**
+Now let's see how Argo CD can detect drift between the live state and the target state. Let's make a simple change in our Git repo for the called schoolapp-subchart/values.yaml. Change the mongodb.auth.enabled value from true to false.
+
+```yaml
+mongodb:
+  auth:
+    enabled: false
+    rootUser: 'schoolapp'
+    rootPassword: 'mongoRootPass'
 ```
-MongoDB Credentials Using Hardcoded Values that appear in GitLab: 
-Username = schoolapp
-Password = mongoRootPass
-```
+Then commit and push your changes.
