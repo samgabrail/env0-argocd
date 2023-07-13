@@ -3,7 +3,7 @@
 
 mongodb:
   auth:
-    enabled: false
+    enabled: true
     rootUser: 'schoolapp'
     rootPassword: 'mongoRootPass'
 
